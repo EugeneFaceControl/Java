@@ -1,11 +1,11 @@
 package bsuir.entity;
 
-public class Matrix {
+public class HardMatrix {
 	private int[][] a;
 	private int n;
 	private int m;
 
-	public Matrix(int nn, int mm) {
+	public HardMatrix(int nn, int mm) {
 		n = nn;
 		m = mm;
 
@@ -18,7 +18,7 @@ public class Matrix {
 		show();
 	}
 
-	public Matrix(int nn, int mm, int k) {
+	public HardMatrix(int nn, int mm, int k) {
 		n = nn;
 		m = mm;
 		a=new int[n][m];
@@ -42,9 +42,9 @@ public class Matrix {
 	}
 	public static void main(String[] args) {
 		int n = 2, m = 3, l = 4;
-		Matrix p = new Matrix(n, m);
-		Matrix q = new Matrix(m, l);
-		Matrix r = new Matrix(n, l, 0);
+		HardMatrix p = new HardMatrix(n, m);
+		HardMatrix q = new HardMatrix(m, l);
+		HardMatrix r = new HardMatrix(n, l, 0);
 		
 		for (int i = 0; i < p.a.length; i++) {
 			for (int j = 0; j < q.a[0].length; j++) {
@@ -53,8 +53,8 @@ public class Matrix {
 			}
 			}
 		}
-//		System.out.println("Произведение матриц: ");
-//		r.show();
+		System.out.println("Произведение матриц: ");
+		r.show();
 	}
 }
 

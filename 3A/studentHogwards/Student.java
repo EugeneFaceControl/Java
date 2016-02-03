@@ -1,4 +1,4 @@
-package student;
+package studentHogwards;
 
 public class Student {
 	private int id, dateOfBirth, add, phone, course, group;

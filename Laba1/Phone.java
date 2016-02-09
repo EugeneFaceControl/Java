@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.*;
 
 public class Phone {
 	public String phoneName(String phone) {
@@ -16,9 +15,11 @@ public class Phone {
 				} else
 					name = "No such telephone";
 			}
+			in.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 		return name;
 	}
 
@@ -36,6 +37,7 @@ public class Phone {
 				} else
 					name = "No such name";
 			}
+			in.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

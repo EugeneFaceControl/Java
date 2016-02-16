@@ -8,14 +8,13 @@ import org.w3c.dom.*;
 import org.w3c.dom.Node;
 import org.w3c.dom.Text;
 import org.xml.sax.SAXException;
-
 import javax.xml.transform.TransformerException;
 import javax.xml.soap.*;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
 import java.io.IOException;
-@SuppressWarnings("unused")
+
 public class StoreService {
 	public String getFileName(SOAPEnvelope req) throws AxisFault, SOAPException {
 		SOAPBodyElement reqBody = (SOAPBodyElement) req.getBodyElements().get(0);
@@ -32,12 +31,14 @@ public class StoreService {
 		return str;
 	}
 
+	
 	public SOAPEnvelope createSOAPResponce(String fileName, SOAPEnvelope resp)
 			throws SOAPException, ParserConfigurationException, IOException, SAXException {
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = dbFactory.newDocumentBuilder();
 		Document document = builder.parse("C://laba1//laba2//" + fileName);
 
+		
 		MessageContext msgCntxt = MessageContext.getCurrentContext();
 		SOAPMessage respMess = msgCntxt.getMessage();
 
@@ -50,6 +51,7 @@ public class StoreService {
 		SOAPHeader header = (SOAPHeader) resp.getHeader();
 		SOAPBody body = resp.getBody();
 		header.detachNode();
+		@SuppressWarnings("unused")
 		SOAPBodyElement docElement = (SOAPBodyElement) body.addDocument(document);
 
 		return envelope;
@@ -58,5 +60,13 @@ public class StoreService {
 	public void storeService(SOAPEnvelope req, SOAPEnvelope resp) throws Exception, TransformerException, IOException {
 		String fileName = getFileName(req);
 		resp = createSOAPResponce(fileName, resp);
+	}
+	public static void main(String[] args) throws TransformerException, IOException, Exception {
+		SOAPEnvelope req = new SOAPEnvelope();
+		SOAPEnvelope resp = new SOAPEnvelope();
+		StoreService ss = new StoreService();
+		ss.storeService(req, resp);
+		
+		
 	}
 }

@@ -5,25 +5,31 @@
 	<classpathentry kind="src" path="Laba1"/>
 	<classpathentry kind="src" path="Laba2"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="var" path="AXIS_JARS/activation.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/axis-ant.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/axis.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/bsf.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/castor-0.9.5.2.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/commons-codec-1.2.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/commons-discovery-0.2.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/commons-httpclient-3.0-rc2.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/commons-logging-1.0.4.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/commons-net-1.0.0-dev.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/httpunit.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/ibmjsse.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/javax.jms.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/jaxrpc.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/JimiProClasses.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/junit-3.8.1.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/mailapi_1_3_1.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/saaj.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/servlet.jar"/>
-	<classpathentry kind="var" path="AXIS_JARS/wsdl4j-1.5.1.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/activation.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/axis-ant.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/axis.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/bsf.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/castor-0.9.5.2.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/commons-codec-1.2.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/commons-discovery-0.2.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/commons-httpclient-3.0-rc2.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/commons-net-1.0.0-dev.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/httpunit.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/ibmjsse.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/javax.jms.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/jaxrpc.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/JimiProClasses.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/junit-3.8.1.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/log4j-1.2.8.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/mail.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/mailapi_1_3_1.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/saaj.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/servlet.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/tools.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/wsdl4j-1.5.1.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/xercesImpl.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/xmlParserAPIs.jar"/>
+	<classpathentry kind="var" path="FOR_AXIS/xmlsec-1.5.8.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
